@@ -18,9 +18,11 @@
         "name": "next"
       }
     ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+  "paths": {
+    "@/*": ["./src/*"],
+    "@swallowtail/db": ["../../packages/db/index.ts"],
+    "@swallowtail/db/*": ["../../packages/db/*"]
+  }
   },
   "include": [
     "next-env.d.ts",
