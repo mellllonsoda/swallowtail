@@ -1,4 +1,4 @@
-# swallowtail
+# db
 
 To install dependencies:
 
