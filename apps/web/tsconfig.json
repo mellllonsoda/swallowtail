@@ -20,7 +20,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@swallowtail/db": ["../../packages/db/index.ts"],
+      "@swallowtail/db/*": ["../../packages/db/*"]
     }
   },
   "include": [

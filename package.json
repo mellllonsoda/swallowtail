@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:web": "bun run --filter @swallowtail/web dev",
+    "dev:web": "bun run --filter @swallowtail/web dev  --webpack",
     "dev:api": "bun run --filter @swallowtail/api dev",
     "dev": "concurrently \"bun run dev:web\" \"bun run dev:api\""
   }
