@@ -1,34 +1,54 @@
-# dependencies (bun install)
-node_modules
-
-# output
-out
-dist
-*.tgz
-
-# code coverage
-coverage
-*.lcov
-
-# logs
+# Logs
 logs
-_.log
-report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
+*.log
+npm-debug.log*
 
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+# Dependency directory
+**/node_modules/**
+_node_modules
+.pnp.cjs
 
-# caches
-.eslintcache
-.cache
-*.tsbuildinfo
+# Coverage directory used by tools like istanbul
+coverage
 
-# IntelliJ based IDEs
-.idea
-
-# Finder (MacOS) folder config
+.tmp
+_docpress
 .DS_Store
+
+lib
+dist
+tsconfig.tsbuildinfo
+test.lib/
+
+# Visual Studio Code configs
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# pnpm uses npm for publishing a new version with
+# dependencies bundled but the npm lockfile is not needed
+# because pnpm use pnpm for installation
+package-lock.json
+
+__package_previews__
+.store
+
+privatePackages/store
+
+## Verdaccio storage
+storage
+
+yarn.lock
+
+RELEASE.md
+
+.jest-cache
+.verdaccio-cache
+.turbo
+.eslintcache
+
+## custom modules-dir fixture
+__fixtures__/custom-modules-dir/**/fake_modules/
+__fixtures__/custom-modules-dir/cache/
+__fixtures__/custom-modules-dir/patches/

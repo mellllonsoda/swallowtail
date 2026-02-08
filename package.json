@@ -1,13 +1,13 @@
 {
   "name": "swallowtail",
-  "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev:web": "bun run --filter @swallowtail/web dev  --webpack",
-    "dev:api": "bun run --filter @swallowtail/api dev",
-    "dev": "concurrently \"bun run dev:web\" \"bun run dev:api\""
-  }
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2"
 }
